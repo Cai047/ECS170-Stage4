@@ -1,0 +1,241 @@
+[
+  {
+    "prompt": "what did the",
+    "prompt_tokens": [
+      "what",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "green",
+      "light",
+      "say",
+      "after",
+      "the",
+      "wall",
+      "?",
+      "he",
+      "was",
+      "a",
+      "-",
+      "from",
+      "(",
+      "as",
+      "her",
+      "baby",
+      "."
+    ],
+    "text": "what did the green light say after the wall? he was a - from (as her baby.",
+    "seed": 170,
+    "stop": "eos"
+  },
+  {
+    "prompt": "what did the",
+    "prompt_tokens": [
+      "what",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "fish",
+      "say",
+      "when",
+      "he",
+      "lost",
+      "his",
+      "tractor",
+      "?",
+      "where's",
+      "\""
+    ],
+    "text": "what did the fish say when he lost his tractor? where's \"",
+    "seed": 171,
+    "stop": "eos"
+  },
+  {
+    "prompt": "what did the",
+    "prompt_tokens": [
+      "what",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "german",
+      "air",
+      "?",
+      "course",
+      "the",
+      "sturgeon"
+    ],
+    "text": "what did the german air? course the sturgeon",
+    "seed": 172,
+    "stop": "eos"
+  },
+  {
+    "prompt": "why did the",
+    "prompt_tokens": [
+      "why",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "snail",
+      "drink",
+      "beer",
+      ",",
+      "and",
+      "an",
+      "italian",
+      "?",
+      "to",
+      "get",
+      "to",
+      "the",
+      "other",
+      "side",
+      "."
+    ],
+    "text": "why did the snail drink beer, and an italian? to get to the other side.",
+    "seed": 170,
+    "stop": "eos"
+  },
+  {
+    "prompt": "why did the",
+    "prompt_tokens": [
+      "why",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "chicken",
+      "kicked",
+      "the",
+      "road",
+      "?",
+      "to",
+      "get",
+      "get",
+      "away",
+      "and",
+      "get",
+      "it",
+      "."
+    ],
+    "text": "why did the chicken kicked the road? to get get away and get it.",
+    "seed": 171,
+    "stop": "eos"
+  },
+  {
+    "prompt": "why did the",
+    "prompt_tokens": [
+      "why",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "boy",
+      "take",
+      "a",
+      "pencil",
+      "and",
+      "an",
+      "egyptian",
+      "out",
+      "of",
+      "his",
+      "armies",
+      "?",
+      "he",
+      "was",
+      "outstanding",
+      "in",
+      "his",
+      "field",
+      "."
+    ],
+    "text": "why did the boy take a pencil and an egyptian out of his armies? he was outstanding in his field.",
+    "seed": 172,
+    "stop": "eos"
+  },
+  {
+    "prompt": "how do you",
+    "prompt_tokens": [
+      "how",
+      "do",
+      "you"
+    ],
+    "generated_tokens": [
+      "kill",
+      "bread",
+      "you",
+      "cookies",
+      "?",
+      "a",
+      "hun",
+      "knee",
+      "very",
+      "long",
+      "."
+    ],
+    "text": "how do you kill bread you cookies? a hun knee very long.",
+    "seed": 170,
+    "stop": "eos"
+  },
+  {
+    "prompt": "how do you",
+    "prompt_tokens": [
+      "how",
+      "do",
+      "you"
+    ],
+    "generated_tokens": [
+      "make",
+      "a",
+      "tissue",
+      "dance",
+      "?",
+      "you",
+      "put",
+      "a",
+      "little",
+      "boogie",
+      "in",
+      "it",
+      "."
+    ],
+    "text": "how do you make a tissue dance? you put a little boogie in it.",
+    "seed": 171,
+    "stop": "eos"
+  },
+  {
+    "prompt": "how do you",
+    "prompt_tokens": [
+      "how",
+      "do",
+      "you"
+    ],
+    "generated_tokens": [
+      "get",
+      "their",
+      "bear",
+      "from",
+      "the",
+      "french",
+      "chef",
+      "?",
+      "they",
+      "uses",
+      "a",
+      "little",
+      "they",
+      "said",
+      "he",
+      "was",
+      "told",
+      "!"
+    ],
+    "text": "how do you get their bear from the french chef? they uses a little they said he was told!",
+    "seed": 172,
+    "stop": "eos"
+  }
+]

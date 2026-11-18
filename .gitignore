@@ -5,3 +5,5 @@ __pycache__/
 /data/
 *.pt
 !results/generation/*/checkpoint.pt
+!results/generation_wide/*/checkpoint.pt
+/results_new/

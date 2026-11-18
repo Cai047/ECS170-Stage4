@@ -1,0 +1,53 @@
+{
+  "config": {
+    "prompts": [
+      "what did the",
+      "why did the",
+      "how do you"
+    ],
+    "epochs": 45,
+    "batch_size": 32,
+    "context": 32,
+    "embedding": 80,
+    "hidden": 128,
+    "max_vocab": 3000,
+    "min_freq": 2,
+    "learning_rate": 0.002,
+    "clip": 1.0,
+    "seed": 170,
+    "sample_seeds": [
+      170,
+      171,
+      172
+    ],
+    "sample_tokens": 60,
+    "temperature": 0.85,
+    "top_k": 15,
+    "device": "cpu",
+    "threads": 4,
+    "cell": "rnn"
+  },
+  "vocab_size": 1645,
+  "parameters": 370685,
+  "training_seconds": 13.268981833010912,
+  "train": {
+    "nll": 1.0194581324975673,
+    "ppl": 2.7716924669035263,
+    "accuracy": 0.7699325664418881,
+    "targets": 25210
+  },
+  "val": {
+    "nll": 4.717889171853405,
+    "ppl": 111.9317344753716,
+    "accuracy": 0.2751842751842752,
+    "targets": 3256
+  },
+  "test": {
+    "nll": 4.652782666031422,
+    "ppl": 104.87641595252849,
+    "accuracy": 0.28243286962148173,
+    "targets": 3091
+  },
+  "torch_version": "2.14.1",
+  "python": "3.12.6"
+}

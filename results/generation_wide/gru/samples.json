@@ -1,0 +1,243 @@
+[
+  {
+    "prompt": "what did the",
+    "prompt_tokens": [
+      "what",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "0",
+      "say",
+      "to",
+      "his",
+      "son",
+      "when",
+      "he",
+      "got",
+      "run",
+      "over",
+      "?",
+      "i'm",
+      "a",
+      "flat",
+      "."
+    ],
+    "text": "what did the 0 say to his son when he got run over? i'm a flat.",
+    "seed": 170,
+    "stop": "eos"
+  },
+  {
+    "prompt": "what did the",
+    "prompt_tokens": [
+      "what",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "fish",
+      "say",
+      "when",
+      "his",
+      "car",
+      "left",
+      "for",
+      "hit",
+      "the",
+      "long",
+      "?"
+    ],
+    "text": "what did the fish say when his car left for hit the long?",
+    "seed": 171,
+    "stop": "eos"
+  },
+  {
+    "prompt": "what did the",
+    "prompt_tokens": [
+      "what",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "tin",
+      "man",
+      "say",
+      "when",
+      "he",
+      "fell",
+      "over",
+      "?",
+      "\"",
+      "i'm",
+      "\"",
+      "my",
+      "way",
+      "\"",
+      "!",
+      "\""
+    ],
+    "text": "what did the tin man say when he fell over? \" i'm \" my way \"! \"",
+    "seed": 172,
+    "stop": "eos"
+  },
+  {
+    "prompt": "why did the",
+    "prompt_tokens": [
+      "why",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "snail",
+      "drink",
+      "beer",
+      "the",
+      "street",
+      "?",
+      "she",
+      "was",
+      "always",
+      "out",
+      "of",
+      "water",
+      "."
+    ],
+    "text": "why did the snail drink beer the street? she was always out of water.",
+    "seed": 170,
+    "stop": "eos"
+  },
+  {
+    "prompt": "why did the",
+    "prompt_tokens": [
+      "why",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "chicken",
+      "go",
+      "to",
+      "the",
+      "other",
+      "side",
+      "?",
+      "because",
+      "she",
+      "wanted",
+      "to",
+      "lay",
+      "his",
+      "filling",
+      "!"
+    ],
+    "text": "why did the chicken go to the other side? because she wanted to lay his filling!",
+    "seed": 171,
+    "stop": "eos"
+  },
+  {
+    "prompt": "why did the",
+    "prompt_tokens": [
+      "why",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "boy",
+      "take",
+      "a",
+      "pencil",
+      "and",
+      "go",
+      "to",
+      "the",
+      "dentist",
+      "?",
+      "it",
+      "was",
+      "a",
+      "soft",
+      "drink",
+      "."
+    ],
+    "text": "why did the boy take a pencil and go to the dentist? it was a soft drink.",
+    "seed": 172,
+    "stop": "eos"
+  },
+  {
+    "prompt": "how do you",
+    "prompt_tokens": [
+      "how",
+      "do",
+      "you"
+    ],
+    "generated_tokens": [
+      "kill",
+      "bread",
+      "from",
+      "an",
+      "elephant",
+      "?",
+      "if",
+      "you",
+      "get",
+      "down",
+      "from",
+      "my",
+      "friend",
+      "."
+    ],
+    "text": "how do you kill bread from an elephant? if you get down from my friend.",
+    "seed": 170,
+    "stop": "eos"
+  },
+  {
+    "prompt": "how do you",
+    "prompt_tokens": [
+      "how",
+      "do",
+      "you"
+    ],
+    "generated_tokens": [
+      "get",
+      "when",
+      "you",
+      "drop",
+      "a",
+      "piano",
+      "?",
+      "i'll",
+      "catch",
+      "you",
+      "later",
+      ",",
+      "it",
+      "was",
+      "a",
+      "tie",
+      "."
+    ],
+    "text": "how do you get when you drop a piano? i'll catch you later, it was a tie.",
+    "seed": 171,
+    "stop": "eos"
+  },
+  {
+    "prompt": "how do you",
+    "prompt_tokens": [
+      "how",
+      "do",
+      "you"
+    ],
+    "generated_tokens": [
+      "make",
+      "a",
+      "tissue",
+      "dance",
+      "?",
+      "a",
+      "buccaneer"
+    ],
+    "text": "how do you make a tissue dance? a buccaneer",
+    "seed": 172,
+    "stop": "eos"
+  }
+]

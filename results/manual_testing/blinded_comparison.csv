@@ -1,0 +1,25 @@
+recipe,model,prompt,beam_output,stop,exact_training_copy,longest_contiguous_train_match,id,readable,coherent,payoff,note
+wide,rnn,A man started,A man started an art contest... It ended in a draw,eos,0,11,1,1,1,1,Draw works both as an art term and a tied contest.
+reference,lstm,Did you hear,Did you hear about the chicken cross the road? To the other slide,eos,0,7,2,0,0,0,"The clause after “about” is malformed, and the road setup gives no reason for a slide."
+wide,lstm,Did you hear,Did you hear about the butcher who backed into the meat grinder? He got a little behind in his work.,eos,1,19,3,1,1,1,Behind links the injury to falling behind at work.
+reference,rnn,Did you hear,Did you hear about the chicken cross the road? To get to the other slide,eos,0,11,4,0,0,0,The question needs “crossing” or another construction. The slide does not follow from the road.
+wide,lstm,Did you see,"Did you see your best joke about pizza? "" Nice belt. """,eos,0,6,5,1,0,0,"The question is syntactically readable, but the belt remark has no evident connection to pizza."
+reference,gru,Did you hear,Did you hear about the kidnapping?,eos,0,3,6,1,1,0,Complete and coherent as a question. There is no payoff.
+wide,gru,Did you see,Did you see the one about the constipated mathematician? He worked his problem out with a pencil.,eos,0,16,7,1,1,1,The mathematician’s “problem” supports the double meaning.
+wide,gru,A man started,"A man started a store and asks "" in a sentence... "" The bartender says, "" what is a sentence? """,eos,0,8,8,0,0,0,"The first quoted question trails off, and the bartender appears without a connection to the store."
+reference,lstm,What do you,What do you call a cow with no legs?,eos,0,7,9,1,1,0,"Well-formed riddle setup, with no answer."
+wide,lstm,What do you,What do you call a cow with no legs? Ground beef.,eos,1,10,10,1,1,1,Ground beef answers the naming question through a pun.
+reference,lstm,A man started,A man started a bar.,eos,0,3,11,1,1,0,Natural if “started a bar” means opened a business. No punchline follows.
+reference,rnn,What do you,What do you call a cow with no legs? Ground beef.,eos,1,10,12,1,1,1,Ground beef answers the naming question through a pun.
+wide,rnn,Did you hear,Did you hear the one about the constipated mathematician? He worked his problem out with a pencil.,eos,1,16,13,1,1,1,The mathematician’s “problem” supports the double meaning.
+wide,rnn,What do you,What do you call a cow with no legs? Ground beef.,eos,1,10,14,1,1,1,Ground beef answers the naming question through a pun.
+wide,rnn,Did you see,Did you see how do you get a white bird fell? Because it saw the salad dressing,eos,0,7,15,0,0,0,"Overlapping question constructions break the syntax, and the salad remark does not resolve the bird setup."
+reference,rnn,Did you see,Did you see a lightbulb?,eos,0,3,16,1,1,0,"Ordinary, coherent yes/no question only."
+reference,gru,What do you,What do you call a cow with no legs? Ground beef.,eos,1,10,17,1,1,1,Ground beef answers the naming question through a pun.
+wide,gru,What do you,What do you call a cow with no legs? Ground beef.,eos,1,10,18,1,1,1,Ground beef answers the naming question through a pun.
+reference,lstm,Did you see,Did you see a lightbulb? A bar.,eos,0,4,19,1,0,0,"The opening is readable, but “A bar” does not answer the lightbulb question."
+reference,rnn,A man started,A man started a cow with no legs? Ground beef.,eos,0,9,20,1,0,1,"The echo-question syntax can be parsed, but “started a cow” is odd. The legless-cow/ground-beef pun is still recognizable."
+wide,gru,Did you hear,Did you hear the one about the constipated mathematician? He worked his problem out with a pencil.,eos,1,16,21,1,1,1,The mathematician’s “problem” supports the double meaning.
+reference,gru,A man started,A man started a man walks into a bar.,eos,0,7,22,0,0,0,Two incompatible beginnings are spliced into one clause.
+wide,lstm,A man started,A man started a joke in a tank. A neutrino walks into a bar.,eos,0,8,23,1,0,0,"The separate sentences are readable, but the neutrino and bar do not resolve the man-in-a-tank setup."
+reference,gru,Did you see,Did you see the wall? Dam,eos,0,4,24,1,1,1,"Borderline. I read “Dam” as a dam/wall identification and a “damn” reaction, giving the terse answer a discernible pun."

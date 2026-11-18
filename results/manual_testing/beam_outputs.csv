@@ -1,0 +1,55 @@
+recipe,model,prompt,beam_output,stop,exact_training_copy,longest_contiguous_train_match
+reference,rnn,What did the,What did the green grape say to the other?,eos,0,5
+reference,rnn,Why did the,Why did the chicken cross the road? To get to the other slide,eos,0,10
+reference,rnn,How do you,How do you make a squid laugh? Ten tickles,eos,0,7
+reference,rnn,What do you,What do you call a cow with no legs? Ground beef.,eos,1,10
+reference,rnn,Did you hear,Did you hear about the chicken cross the road? To get to the other slide,eos,0,11
+reference,rnn,A man started,A man started a cow with no legs? Ground beef.,eos,0,9
+reference,rnn,Did you see,Did you see a lightbulb?,eos,0,3
+reference,rnn,The angry chicken,The angry chicken do you get when you cross an octopus laugh? Ten tickles,eos,0,8
+reference,rnn,The purple fish,The purple fish... But I don't know,eos,0,5
+reference,lstm,What did the,"What did the fish say to the other? """,eos,0,6
+reference,lstm,Why did the,Why did the chicken cross the road?,eos,0,5
+reference,lstm,How do you,How do you call a cow with no legs?,eos,0,7
+reference,lstm,What do you,What do you call a cow with no legs?,eos,0,7
+reference,lstm,Did you hear,Did you hear about the chicken cross the road? To the other slide,eos,0,7
+reference,lstm,A man started,A man started a bar.,eos,0,3
+reference,lstm,Did you see,Did you see a lightbulb? A bar.,eos,0,4
+reference,lstm,The angry chicken,"The angry chicken the other day? """,eos,0,3
+reference,lstm,The purple fish,The purple fish... He was outstanding in his field.,eos,0,7
+reference,gru,What did the,What did the green grape say to the other? Time's fun when you're having flies.,eos,0,12
+reference,gru,Why did the,Why did the chicken cross the road? To get to the other slide,eos,0,10
+reference,gru,How do you,How do you make a squid laugh? Ten tickles.,eos,1,8
+reference,gru,What do you,What do you call a cow with no legs? Ground beef.,eos,1,10
+reference,gru,Did you hear,Did you hear about the kidnapping?,eos,0,3
+reference,gru,A man started,A man started a man walks into a bar.,eos,0,7
+reference,gru,Did you see,Did you see the wall? Dam,eos,0,4
+reference,gru,The angry chicken,The angry chicken it take to change a lightbulb?,eos,0,7
+reference,gru,The purple fish,The purple fish in a tank.,eos,0,4
+wide,rnn,What did the,What did the tin man say when he got run over by a steamroller? Curses! Foil again!,eos,1,17
+wide,rnn,Why did the,Why did the chicken cross the playground? To get to the other slide,eos,1,11
+wide,rnn,How do you,How do you make a squid laugh? Ten tickles.,eos,1,8
+wide,rnn,What do you,What do you call a cow with no legs? Ground beef.,eos,1,10
+wide,rnn,Did you hear,Did you hear the one about the constipated mathematician? He worked his problem out with a pencil.,eos,1,16
+wide,rnn,A man started,A man started an art contest... It ended in a draw,eos,0,11
+wide,rnn,Did you see,Did you see how do you get a white bird fell? Because it saw the salad dressing,eos,0,7
+wide,rnn,The angry chicken,The angry chicken so bad? * * Person 1: * * ~ skip,eos,0,8
+wide,rnn,The purple fish,The purple fish - brown...,eos,0,3
+wide,lstm,What did the,What did the tin man say when he got run over by a steamroller? Curses! Foil again!,eos,1,17
+wide,lstm,Why did the,Why did the chicken cross the playground? To get to the other slide,eos,1,11
+wide,lstm,How do you,How do you make a tissue dance? You put a little boogie in it.,eos,0,13
+wide,lstm,What do you,What do you call a cow with no legs? Ground beef.,eos,1,10
+wide,lstm,Did you hear,Did you hear about the butcher who backed into the meat grinder? He got a little behind in his work.,eos,1,19
+wide,lstm,A man started,A man started a joke in a tank. A neutrino walks into a bar.,eos,0,8
+wide,lstm,Did you see,"Did you see your best joke about pizza? "" Nice belt. """,eos,0,6
+wide,lstm,The angry chicken,The angry chicken in a tank.,eos,0,4
+wide,lstm,The purple fish,The purple fish: what do you call a cow with no legs? Ground beef.,eos,0,13
+wide,gru,What did the,What did the tin man say when he got run over by a steamroller? Curses! Foil again!,eos,1,17
+wide,gru,Why did the,Why did the chicken cross the playground? To get to the other slide,eos,1,11
+wide,gru,How do you,How do you make a tissue dance? You put a little boogie in it.:),eos,1,15
+wide,gru,What do you,What do you call a cow with no legs? Ground beef.,eos,1,10
+wide,gru,Did you hear,Did you hear the one about the constipated mathematician? He worked his problem out with a pencil.,eos,1,16
+wide,gru,A man started,"A man started a store and asks "" in a sentence... "" The bartender says, "" what is a sentence? """,eos,0,8
+wide,gru,Did you see,Did you see the one about the constipated mathematician? He worked his problem out with a pencil.,eos,0,16
+wide,gru,The angry chicken,"The angry chicken say to the other, "" where is ""? "" The second eskimo says "" alaska. """,eos,0,10
+wide,gru,The purple fish,The purple fish 1: what do you call a group of security guards in front of a samsung store? Guardians of the galaxy.,eos,0,21

@@ -1,0 +1,47 @@
+{
+  "sources": [
+    {
+      "file": "data",
+      "bytes": 140224,
+      "sha256": "a4af796b82cc608c2cd25f272a4469a34413fc4c95efc2e6042a2e2b259a58c0",
+      "tokens": 29935,
+      "records": 1622
+    }
+  ],
+  "test_sources": [],
+  "split": "80/10/10 by unique normalized joke groups, fixed shuffle seed 170",
+  "split_seed": 170,
+  "unique_groups": 1593,
+  "vocab_size": 1645,
+  "max_vocab": 3000,
+  "min_freq": 2,
+  "special_tokens": [
+    "<pad>",
+    "<unk>",
+    "<bos>",
+    "<eos>"
+  ],
+  "splits": {
+    "train": {
+      "tokens": 23911,
+      "documents_or_fragments": 1299,
+      "unique_groups": 1274,
+      "oov_tokens": 2495,
+      "oov_fraction": 0.10434528041487182
+    },
+    "val": {
+      "tokens": 3096,
+      "documents_or_fragments": 160,
+      "unique_groups": 159,
+      "oov_tokens": 509,
+      "oov_fraction": 0.16440568475452197
+    },
+    "test": {
+      "tokens": 2928,
+      "documents_or_fragments": 163,
+      "unique_groups": 160,
+      "oov_tokens": 507,
+      "oov_fraction": 0.17315573770491804
+    }
+  }
+}

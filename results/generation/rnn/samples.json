@@ -1,0 +1,258 @@
+[
+  {
+    "prompt": "what did the",
+    "prompt_tokens": [
+      "what",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "german",
+      "man",
+      "a",
+      "cow",
+      "with",
+      "no",
+      "life",
+      "?"
+    ],
+    "text": "what did the german man a cow with no life?",
+    "seed": 170,
+    "stop": "eos"
+  },
+  {
+    "prompt": "what did the",
+    "prompt_tokens": [
+      "what",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "fish",
+      "say",
+      "when",
+      "it",
+      "was",
+      "a",
+      "little",
+      "drink",
+      "?",
+      "they",
+      "are",
+      "shellfish",
+      "."
+    ],
+    "text": "what did the fish say when it was a little drink? they are shellfish.",
+    "seed": 171,
+    "stop": "eos"
+  },
+  {
+    "prompt": "what did the",
+    "prompt_tokens": [
+      "what",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "green",
+      "grape",
+      "say",
+      "to",
+      "the",
+      "most",
+      "?"
+    ],
+    "text": "what did the green grape say to the most?",
+    "seed": 172,
+    "stop": "eos"
+  },
+  {
+    "prompt": "why did the",
+    "prompt_tokens": [
+      "why",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "bicycle",
+      "cross",
+      "the",
+      "playground",
+      "?",
+      "to",
+      "make",
+      "a",
+      "bar",
+      "."
+    ],
+    "text": "why did the bicycle cross the playground? to make a bar.",
+    "seed": 170,
+    "stop": "eos"
+  },
+  {
+    "prompt": "why did the",
+    "prompt_tokens": [
+      "why",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "chicken",
+      "cross",
+      "the",
+      "playground",
+      "?",
+      "to",
+      "get",
+      "in",
+      "the",
+      "best",
+      "joke",
+      "about",
+      "the",
+      "bartender",
+      "says",
+      "\"",
+      "i'm",
+      "afraid",
+      "of",
+      "people",
+      "today",
+      ".",
+      ".",
+      ".",
+      ".",
+      ".",
+      ".",
+      ".",
+      ".",
+      "but",
+      "you",
+      "guys",
+      "about",
+      "the",
+      "fan",
+      "?"
+    ],
+    "text": "why did the chicken cross the playground? to get in the best joke about the bartender says \" i'm afraid of people today........ but you guys about the fan?",
+    "seed": 171,
+    "stop": "eos"
+  },
+  {
+    "prompt": "why did the",
+    "prompt_tokens": [
+      "why",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "strawberry",
+      "go",
+      "home",
+      "?",
+      "he",
+      "had",
+      "a",
+      "lot",
+      "of",
+      "them",
+      "do",
+      "you",
+      "get",
+      ",",
+      "a",
+      "man",
+      "get",
+      "of",
+      "paper",
+      "."
+    ],
+    "text": "why did the strawberry go home? he had a lot of them do you get, a man get of paper.",
+    "seed": 172,
+    "stop": "eos"
+  },
+  {
+    "prompt": "how do you",
+    "prompt_tokens": [
+      "how",
+      "do",
+      "you"
+    ],
+    "generated_tokens": [
+      "call",
+      "an",
+      "alligator",
+      "to",
+      "the",
+      "other",
+      "wall",
+      "?",
+      "because",
+      "he",
+      "was",
+      "two",
+      "legs",
+      "."
+    ],
+    "text": "how do you call an alligator to the other wall? because he was two legs.",
+    "seed": 170,
+    "stop": "eos"
+  },
+  {
+    "prompt": "how do you",
+    "prompt_tokens": [
+      "how",
+      "do",
+      "you"
+    ],
+    "generated_tokens": [
+      "get",
+      "about",
+      "the",
+      "playground",
+      "?",
+      "because",
+      "he",
+      "knew",
+      "the",
+      "second",
+      "eskimo",
+      "/",
+      "watch",
+      "?",
+      "v",
+      "=",
+      "one",
+      "-",
+      "tired",
+      "."
+    ],
+    "text": "how do you get about the playground? because he knew the second eskimo / watch? v = one - tired.",
+    "seed": 171,
+    "stop": "eos"
+  },
+  {
+    "prompt": "how do you",
+    "prompt_tokens": [
+      "how",
+      "do",
+      "you"
+    ],
+    "generated_tokens": [
+      "make",
+      "a",
+      "balloon",
+      "dance",
+      "?",
+      "you",
+      "get",
+      "to",
+      "the",
+      "other",
+      "slide"
+    ],
+    "text": "how do you make a balloon dance? you get to the other slide",
+    "seed": 172,
+    "stop": "eos"
+  }
+]

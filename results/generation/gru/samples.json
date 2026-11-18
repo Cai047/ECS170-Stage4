@@ -1,0 +1,274 @@
+[
+  {
+    "prompt": "what did the",
+    "prompt_tokens": [
+      "what",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "number",
+      "say",
+      "to",
+      "hear",
+      "a",
+      "turkey",
+      "with",
+      "a",
+      "snowman",
+      "?",
+      "a",
+      "buccaneer",
+      "says",
+      ",",
+      "and",
+      "the",
+      "bartender",
+      "say",
+      "when",
+      "i",
+      "had",
+      "a",
+      "word",
+      "and",
+      "a",
+      "mop",
+      "legs",
+      "and",
+      "asked",
+      "\"",
+      "and",
+      "the",
+      "other",
+      ",",
+      "\"",
+      "\""
+    ],
+    "text": "what did the number say to hear a turkey with a snowman? a buccaneer says, and the bartender say when i had a word and a mop legs and asked \" and the other, \" \"",
+    "seed": 170,
+    "stop": "eos"
+  },
+  {
+    "prompt": "what did the",
+    "prompt_tokens": [
+      "what",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "fish",
+      "say",
+      "when",
+      "the",
+      "judge",
+      "?",
+      "he",
+      "drove",
+      "is",
+      "heavier",
+      "than",
+      "flying",
+      "since",
+      "/",
+      "jokes",
+      ")",
+      "!",
+      "*",
+      "*"
+    ],
+    "text": "what did the fish say when the judge? he drove is heavier than flying since / jokes)! * *",
+    "seed": 171,
+    "stop": "eos"
+  },
+  {
+    "prompt": "what did the",
+    "prompt_tokens": [
+      "what",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "green",
+      "grape",
+      "say",
+      "to",
+      "the",
+      "purple",
+      "grape",
+      "?",
+      "\""
+    ],
+    "text": "what did the green grape say to the purple grape? \"",
+    "seed": 172,
+    "stop": "eos"
+  },
+  {
+    "prompt": "why did the",
+    "prompt_tokens": [
+      "why",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "snail",
+      "get",
+      "the",
+      "cross",
+      "the",
+      "road",
+      "?",
+      "to",
+      "get",
+      "to",
+      "the",
+      "other",
+      "life",
+      "she",
+      "had",
+      "a",
+      "lot",
+      "of",
+      "it",
+      "-",
+      "-"
+    ],
+    "text": "why did the snail get the cross the road? to get to the other life she had a lot of it - -",
+    "seed": 170,
+    "stop": "eos"
+  },
+  {
+    "prompt": "why did the",
+    "prompt_tokens": [
+      "why",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "chicken",
+      "go",
+      "to",
+      "get",
+      "to",
+      "the",
+      "other",
+      "?",
+      "because",
+      "they",
+      "always",
+      "drown",
+      "it",
+      "."
+    ],
+    "text": "why did the chicken go to get to the other? because they always drown it.",
+    "seed": 171,
+    "stop": "eos"
+  },
+  {
+    "prompt": "why did the",
+    "prompt_tokens": [
+      "why",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "boy",
+      "fall",
+      "of",
+      "in",
+      "the",
+      "moon",
+      "leek",
+      "?",
+      "he",
+      "was",
+      "two",
+      "tired",
+      "!"
+    ],
+    "text": "why did the boy fall of in the moon leek? he was two tired!",
+    "seed": 172,
+    "stop": "eos"
+  },
+  {
+    "prompt": "how do you",
+    "prompt_tokens": [
+      "how",
+      "do",
+      "you"
+    ],
+    "generated_tokens": [
+      "call",
+      "it",
+      "take",
+      "an",
+      "octopus",
+      "laugh",
+      "?",
+      "you",
+      "put",
+      "a",
+      "boogie",
+      "and",
+      "ships",
+      "."
+    ],
+    "text": "how do you call it take an octopus laugh? you put a boogie and ships.",
+    "seed": 170,
+    "stop": "eos"
+  },
+  {
+    "prompt": "how do you",
+    "prompt_tokens": [
+      "how",
+      "do",
+      "you"
+    ],
+    "generated_tokens": [
+      "make",
+      "it",
+      "when",
+      "it",
+      "when",
+      "a",
+      "party",
+      "?",
+      "because",
+      "anyone",
+      "do",
+      "you",
+      "get",
+      "a",
+      "fly",
+      "?",
+      "a",
+      "brick",
+      "."
+    ],
+    "text": "how do you make it when it when a party? because anyone do you get a fly? a brick.",
+    "seed": 171,
+    "stop": "eos"
+  },
+  {
+    "prompt": "how do you",
+    "prompt_tokens": [
+      "how",
+      "do",
+      "you"
+    ],
+    "generated_tokens": [
+      "get",
+      "a",
+      "squid",
+      "laugh",
+      "?",
+      "you",
+      "make",
+      "a",
+      "piano",
+      "."
+    ],
+    "text": "how do you get a squid laugh? you make a piano.",
+    "seed": 172,
+    "stop": "eos"
+  }
+]

@@ -1,0 +1,854 @@
+{
+  "definitions": {
+    "training_fourgram_fraction": "Fraction of generated four-token positions also seen contiguously in at least one training document.",
+    "repeated_trigram_fraction": "Fraction of generated three-token positions duplicating an earlier trigram in the same continuation.",
+    "max_training_match_tokens": "Longest exact contiguous overlap with one training document, measured over all continuations.",
+    "tokenization": "Same lowercase tokens as the corpus loader, including punctuation. Fourgrams, trigrams, and longest match exclude the three prompt words. Document indices and offsets are zero-based.",
+    "exact_training_jokes": "Count of complete normalized token sequences (including prompt) identical to a training joke.",
+    "eos_samples": "Count of samples that emitted end-of-sequence before the token limit.",
+    "aggregation": "Rates pool position counts across samples; undefined rates are null. training_prompt_example is the first training joke with exactly the same three opening tokens, when one exists."
+  },
+  "samples": {
+    "rnn": [
+      {
+        "prompt": "what did the",
+        "seed": 170,
+        "text": "what did the german man a cow with no life?",
+        "stop": "eos",
+        "continuation_tokens": 8,
+        "training_prompt_example": {
+          "training_document_index": 0,
+          "text": "what did the bartender say to the jumper cables? you better not try to start anything."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 4,
+          "training_document_index": 213,
+          "training_token_offset": 4,
+          "generated_token_offset": 2,
+          "tokens": [
+            "a",
+            "cow",
+            "with",
+            "no"
+          ]
+        },
+        "fourgrams": 5,
+        "training_fourgram_hits": 1,
+        "training_fourgram_fraction": 0.2,
+        "trigrams": 6,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "what did the",
+        "seed": 171,
+        "text": "what did the fish say when it was a little drink? they are shellfish.",
+        "stop": "eos",
+        "continuation_tokens": 13,
+        "training_prompt_example": {
+          "training_document_index": 0,
+          "text": "what did the bartender say to the jumper cables? you better not try to start anything."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 5,
+          "training_document_index": 519,
+          "training_token_offset": 6,
+          "generated_token_offset": 8,
+          "tokens": [
+            "?",
+            "they",
+            "are",
+            "shellfish",
+            "."
+          ]
+        },
+        "fourgrams": 10,
+        "training_fourgram_hits": 4,
+        "training_fourgram_fraction": 0.4,
+        "trigrams": 11,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "what did the",
+        "seed": 172,
+        "text": "what did the green grape say to the most?",
+        "stop": "eos",
+        "continuation_tokens": 7,
+        "training_prompt_example": {
+          "training_document_index": 0,
+          "text": "what did the bartender say to the jumper cables? you better not try to start anything."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 5,
+          "training_document_index": 41,
+          "training_token_offset": 3,
+          "generated_token_offset": 0,
+          "tokens": [
+            "green",
+            "grape",
+            "say",
+            "to",
+            "the"
+          ]
+        },
+        "fourgrams": 4,
+        "training_fourgram_hits": 2,
+        "training_fourgram_fraction": 0.5,
+        "trigrams": 5,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "why did the",
+        "seed": 170,
+        "text": "why did the bicycle cross the playground? to make a bar.",
+        "stop": "eos",
+        "continuation_tokens": 10,
+        "training_prompt_example": {
+          "training_document_index": 3,
+          "text": "why did the chicken cross the playground? to get to the other slide."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 5,
+          "training_document_index": 3,
+          "training_token_offset": 4,
+          "generated_token_offset": 1,
+          "tokens": [
+            "cross",
+            "the",
+            "playground",
+            "?",
+            "to"
+          ]
+        },
+        "fourgrams": 7,
+        "training_fourgram_hits": 2,
+        "training_fourgram_fraction": 0.2857142857142857,
+        "trigrams": 8,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "why did the",
+        "seed": 171,
+        "text": "why did the chicken cross the playground? to get in the best joke about the bartender says \" i'm afraid of people today........ but you guys about the fan?",
+        "stop": "eos",
+        "continuation_tokens": 36,
+        "training_prompt_example": {
+          "training_document_index": 3,
+          "text": "why did the chicken cross the playground? to get to the other slide."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 8,
+          "training_document_index": 503,
+          "training_token_offset": 13,
+          "generated_token_offset": 21,
+          "tokens": [
+            ".",
+            ".",
+            ".",
+            ".",
+            ".",
+            ".",
+            ".",
+            "."
+          ]
+        },
+        "fourgrams": 33,
+        "training_fourgram_hits": 13,
+        "training_fourgram_fraction": 0.3939393939393939,
+        "trigrams": 34,
+        "repeated_trigrams": 5,
+        "repeated_trigram_fraction": 0.14705882352941177
+      },
+      {
+        "prompt": "why did the",
+        "seed": 172,
+        "text": "why did the strawberry go home? he had a lot of them do you get, a man get of paper.",
+        "stop": "eos",
+        "continuation_tokens": 20,
+        "training_prompt_example": {
+          "training_document_index": 3,
+          "text": "why did the chicken cross the playground? to get to the other slide."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 4,
+          "training_document_index": 207,
+          "training_token_offset": 8,
+          "generated_token_offset": 5,
+          "tokens": [
+            "had",
+            "a",
+            "lot",
+            "of"
+          ]
+        },
+        "fourgrams": 17,
+        "training_fourgram_hits": 3,
+        "training_fourgram_fraction": 0.17647058823529413,
+        "trigrams": 18,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "how do you",
+        "seed": 170,
+        "text": "how do you call an alligator to the other wall? because he was two legs.",
+        "stop": "eos",
+        "continuation_tokens": 14,
+        "training_prompt_example": {
+          "training_document_index": 60,
+          "text": "how do you prepare for a party in space? you planet thanks u / bostoncentrist"
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 5,
+          "training_document_index": 1284,
+          "training_token_offset": 5,
+          "generated_token_offset": 3,
+          "tokens": [
+            "to",
+            "the",
+            "other",
+            "wall",
+            "?"
+          ]
+        },
+        "fourgrams": 11,
+        "training_fourgram_hits": 3,
+        "training_fourgram_fraction": 0.2727272727272727,
+        "trigrams": 12,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "how do you",
+        "seed": 171,
+        "text": "how do you get about the playground? because he knew the second eskimo / watch? v = one - tired.",
+        "stop": "eos",
+        "continuation_tokens": 20,
+        "training_prompt_example": {
+          "training_document_index": 60,
+          "text": "how do you prepare for a party in space? you planet thanks u / bostoncentrist"
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 5,
+          "training_document_index": 76,
+          "training_token_offset": 28,
+          "generated_token_offset": 11,
+          "tokens": [
+            "/",
+            "watch",
+            "?",
+            "v",
+            "="
+          ]
+        },
+        "fourgrams": 17,
+        "training_fourgram_hits": 3,
+        "training_fourgram_fraction": 0.17647058823529413,
+        "trigrams": 18,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "how do you",
+        "seed": 172,
+        "text": "how do you make a balloon dance? you get to the other slide",
+        "stop": "eos",
+        "continuation_tokens": 11,
+        "training_prompt_example": {
+          "training_document_index": 60,
+          "text": "how do you prepare for a party in space? you planet thanks u / bostoncentrist"
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 5,
+          "training_document_index": 3,
+          "training_token_offset": 9,
+          "generated_token_offset": 6,
+          "tokens": [
+            "get",
+            "to",
+            "the",
+            "other",
+            "slide"
+          ]
+        },
+        "fourgrams": 8,
+        "training_fourgram_hits": 2,
+        "training_fourgram_fraction": 0.25,
+        "trigrams": 9,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      }
+    ],
+    "lstm": [
+      {
+        "prompt": "what did the",
+        "seed": 170,
+        "text": "what did the number zero say his other frog, and smells? he could the other day to get when the bartender, \" is the necronomnomnomicon.!",
+        "stop": "eos",
+        "continuation_tokens": 27,
+        "training_prompt_example": {
+          "training_document_index": 0,
+          "text": "what did the bartender say to the jumper cables? you better not try to start anything."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 3,
+          "training_document_index": 18,
+          "training_token_offset": 3,
+          "generated_token_offset": 0,
+          "tokens": [
+            "number",
+            "zero",
+            "say"
+          ]
+        },
+        "fourgrams": 24,
+        "training_fourgram_hits": 0,
+        "training_fourgram_fraction": 0.0,
+        "trigrams": 25,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "what did the",
+        "seed": 171,
+        "text": "what did the other to the difference between a man go to see? because he was at a - - shirt.",
+        "stop": "eos",
+        "continuation_tokens": 20,
+        "training_prompt_example": {
+          "training_document_index": 0,
+          "text": "what did the bartender say to the jumper cables? you better not try to start anything."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 5,
+          "training_document_index": 1098,
+          "training_token_offset": 2,
+          "generated_token_offset": 2,
+          "tokens": [
+            "the",
+            "difference",
+            "between",
+            "a",
+            "man"
+          ]
+        },
+        "fourgrams": 17,
+        "training_fourgram_hits": 3,
+        "training_fourgram_fraction": 0.17647058823529413,
+        "trigrams": 18,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "what did the",
+        "seed": 172,
+        "text": "what did the fish say when when he got his? because he was a dog.",
+        "stop": "eos",
+        "continuation_tokens": 14,
+        "training_prompt_example": {
+          "training_document_index": 0,
+          "text": "what did the bartender say to the jumper cables? you better not try to start anything."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 5,
+          "training_document_index": 566,
+          "training_token_offset": 8,
+          "generated_token_offset": 7,
+          "tokens": [
+            "?",
+            "because",
+            "he",
+            "was",
+            "a"
+          ]
+        },
+        "fourgrams": 11,
+        "training_fourgram_hits": 2,
+        "training_fourgram_fraction": 0.18181818181818182,
+        "trigrams": 12,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "why did the",
+        "seed": 170,
+        "text": "why did the melon fall in his chicken? it.",
+        "stop": "eos",
+        "continuation_tokens": 8,
+        "training_prompt_example": {
+          "training_document_index": 3,
+          "text": "why did the chicken cross the playground? to get to the other slide."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 2,
+          "training_document_index": 7,
+          "training_token_offset": 22,
+          "generated_token_offset": 6,
+          "tokens": [
+            "it",
+            "."
+          ]
+        },
+        "fourgrams": 5,
+        "training_fourgram_hits": 0,
+        "training_fourgram_fraction": 0.0,
+        "trigrams": 6,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "why did the",
+        "seed": 171,
+        "text": "why did the chicken cross the other and a pie? because it was a little - minded!!!",
+        "stop": "eos",
+        "continuation_tokens": 18,
+        "training_prompt_example": {
+          "training_document_index": 3,
+          "text": "why did the chicken cross the playground? to get to the other slide."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 5,
+          "training_document_index": 466,
+          "training_token_offset": 5,
+          "generated_token_offset": 7,
+          "tokens": [
+            "?",
+            "because",
+            "it",
+            "was",
+            "a"
+          ]
+        },
+        "fourgrams": 15,
+        "training_fourgram_hits": 2,
+        "training_fourgram_fraction": 0.13333333333333333,
+        "trigrams": 16,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "why did the",
+        "seed": 172,
+        "text": "why did the fish say to the other wall? he was a cow with a piano",
+        "stop": "eos",
+        "continuation_tokens": 14,
+        "training_prompt_example": {
+          "training_document_index": 3,
+          "text": "why did the chicken cross the playground? to get to the other slide."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 6,
+          "training_document_index": 1284,
+          "training_token_offset": 4,
+          "generated_token_offset": 1,
+          "tokens": [
+            "say",
+            "to",
+            "the",
+            "other",
+            "wall",
+            "?"
+          ]
+        },
+        "fourgrams": 11,
+        "training_fourgram_hits": 5,
+        "training_fourgram_fraction": 0.45454545454545453,
+        "trigrams": 12,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "how do you",
+        "seed": 170,
+        "text": "how do you call an octopus of a pair of a lightbulb? a cow of a - eye.",
+        "stop": "eos",
+        "continuation_tokens": 17,
+        "training_prompt_example": {
+          "training_document_index": 60,
+          "text": "how do you prepare for a party in space? you planet thanks u / bostoncentrist"
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 4,
+          "training_document_index": 969,
+          "training_token_offset": 9,
+          "generated_token_offset": 7,
+          "tokens": [
+            "a",
+            "lightbulb",
+            "?",
+            "a"
+          ]
+        },
+        "fourgrams": 14,
+        "training_fourgram_hits": 1,
+        "training_fourgram_fraction": 0.07142857142857142,
+        "trigrams": 15,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "how do you",
+        "seed": 171,
+        "text": "how do you get to the chicken cross the road? a duck",
+        "stop": "eos",
+        "continuation_tokens": 10,
+        "training_prompt_example": {
+          "training_document_index": 60,
+          "text": "how do you prepare for a party in space? you planet thanks u / bostoncentrist"
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 6,
+          "training_document_index": 759,
+          "training_token_offset": 2,
+          "generated_token_offset": 2,
+          "tokens": [
+            "the",
+            "chicken",
+            "cross",
+            "the",
+            "road",
+            "?"
+          ]
+        },
+        "fourgrams": 7,
+        "training_fourgram_hits": 3,
+        "training_fourgram_fraction": 0.42857142857142855,
+        "trigrams": 8,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "how do you",
+        "seed": 172,
+        "text": "how do you make a tissue deer? a little",
+        "stop": "eos",
+        "continuation_tokens": 7,
+        "training_prompt_example": {
+          "training_document_index": 60,
+          "text": "how do you prepare for a party in space? you planet thanks u / bostoncentrist"
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 3,
+          "training_document_index": 684,
+          "training_token_offset": 3,
+          "generated_token_offset": 0,
+          "tokens": [
+            "make",
+            "a",
+            "tissue"
+          ]
+        },
+        "fourgrams": 4,
+        "training_fourgram_hits": 0,
+        "training_fourgram_fraction": 0.0,
+        "trigrams": 5,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      }
+    ],
+    "gru": [
+      {
+        "prompt": "what did the",
+        "seed": 170,
+        "text": "what did the number say to hear a turkey with a snowman? a buccaneer says, and the bartender say when i had a word and a mop legs and asked \" and the other, \" \"",
+        "stop": "eos",
+        "continuation_tokens": 36,
+        "training_prompt_example": {
+          "training_document_index": 0,
+          "text": "what did the bartender say to the jumper cables? you better not try to start anything."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 4,
+          "training_document_index": 257,
+          "training_token_offset": 22,
+          "generated_token_offset": 31,
+          "tokens": [
+            "the",
+            "other",
+            ",",
+            "\""
+          ]
+        },
+        "fourgrams": 33,
+        "training_fourgram_hits": 1,
+        "training_fourgram_fraction": 0.030303030303030304,
+        "trigrams": 34,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "what did the",
+        "seed": 171,
+        "text": "what did the fish say when the judge? he drove is heavier than flying since / jokes)! * *",
+        "stop": "eos",
+        "continuation_tokens": 19,
+        "training_prompt_example": {
+          "training_document_index": 0,
+          "text": "what did the bartender say to the jumper cables? you better not try to start anything."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 4,
+          "training_document_index": 1128,
+          "training_token_offset": 15,
+          "generated_token_offset": 8,
+          "tokens": [
+            "is",
+            "heavier",
+            "than",
+            "flying"
+          ]
+        },
+        "fourgrams": 16,
+        "training_fourgram_hits": 1,
+        "training_fourgram_fraction": 0.0625,
+        "trigrams": 17,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "what did the",
+        "seed": 172,
+        "text": "what did the green grape say to the purple grape? \"",
+        "stop": "eos",
+        "continuation_tokens": 9,
+        "training_prompt_example": {
+          "training_document_index": 0,
+          "text": "what did the bartender say to the jumper cables? you better not try to start anything."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 9,
+          "training_document_index": 426,
+          "training_token_offset": 3,
+          "generated_token_offset": 0,
+          "tokens": [
+            "green",
+            "grape",
+            "say",
+            "to",
+            "the",
+            "purple",
+            "grape",
+            "?",
+            "\""
+          ]
+        },
+        "fourgrams": 6,
+        "training_fourgram_hits": 6,
+        "training_fourgram_fraction": 1.0,
+        "trigrams": 7,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "why did the",
+        "seed": 170,
+        "text": "why did the snail get the cross the road? to get to the other life she had a lot of it - -",
+        "stop": "eos",
+        "continuation_tokens": 21,
+        "training_prompt_example": {
+          "training_document_index": 3,
+          "text": "why did the chicken cross the playground? to get to the other slide."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 9,
+          "training_document_index": 762,
+          "training_token_offset": 4,
+          "generated_token_offset": 3,
+          "tokens": [
+            "cross",
+            "the",
+            "road",
+            "?",
+            "to",
+            "get",
+            "to",
+            "the",
+            "other"
+          ]
+        },
+        "fourgrams": 18,
+        "training_fourgram_hits": 7,
+        "training_fourgram_fraction": 0.3888888888888889,
+        "trigrams": 19,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "why did the",
+        "seed": 171,
+        "text": "why did the chicken go to get to the other? because they always drown it.",
+        "stop": "eos",
+        "continuation_tokens": 14,
+        "training_prompt_example": {
+          "training_document_index": 3,
+          "text": "why did the chicken cross the playground? to get to the other slide."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 5,
+          "training_document_index": 3,
+          "training_token_offset": 8,
+          "generated_token_offset": 2,
+          "tokens": [
+            "to",
+            "get",
+            "to",
+            "the",
+            "other"
+          ]
+        },
+        "fourgrams": 11,
+        "training_fourgram_hits": 3,
+        "training_fourgram_fraction": 0.2727272727272727,
+        "trigrams": 12,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "why did the",
+        "seed": 172,
+        "text": "why did the boy fall of in the moon leek? he was two tired!",
+        "stop": "eos",
+        "continuation_tokens": 13,
+        "training_prompt_example": {
+          "training_document_index": 3,
+          "text": "why did the chicken cross the playground? to get to the other slide."
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 4,
+          "training_document_index": 148,
+          "training_token_offset": 12,
+          "generated_token_offset": 9,
+          "tokens": [
+            "was",
+            "two",
+            "tired",
+            "!"
+          ]
+        },
+        "fourgrams": 10,
+        "training_fourgram_hits": 1,
+        "training_fourgram_fraction": 0.1,
+        "trigrams": 11,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "how do you",
+        "seed": 170,
+        "text": "how do you call it take an octopus laugh? you put a boogie and ships.",
+        "stop": "eos",
+        "continuation_tokens": 14,
+        "training_prompt_example": {
+          "training_document_index": 60,
+          "text": "how do you prepare for a party in space? you planet thanks u / bostoncentrist"
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 5,
+          "training_document_index": 684,
+          "training_token_offset": 7,
+          "generated_token_offset": 6,
+          "tokens": [
+            "?",
+            "you",
+            "put",
+            "a",
+            "boogie"
+          ]
+        },
+        "fourgrams": 11,
+        "training_fourgram_hits": 3,
+        "training_fourgram_fraction": 0.2727272727272727,
+        "trigrams": 12,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "how do you",
+        "seed": 171,
+        "text": "how do you make it when it when a party? because anyone do you get a fly? a brick.",
+        "stop": "eos",
+        "continuation_tokens": 19,
+        "training_prompt_example": {
+          "training_document_index": 60,
+          "text": "how do you prepare for a party in space? you planet thanks u / bostoncentrist"
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 4,
+          "training_document_index": 20,
+          "training_token_offset": 7,
+          "generated_token_offset": 15,
+          "tokens": [
+            "?",
+            "a",
+            "brick",
+            "."
+          ]
+        },
+        "fourgrams": 16,
+        "training_fourgram_hits": 2,
+        "training_fourgram_fraction": 0.125,
+        "trigrams": 17,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      },
+      {
+        "prompt": "how do you",
+        "seed": 172,
+        "text": "how do you get a squid laugh? you make a piano.",
+        "stop": "eos",
+        "continuation_tokens": 10,
+        "training_prompt_example": {
+          "training_document_index": 60,
+          "text": "how do you prepare for a party in space? you planet thanks u / bostoncentrist"
+        },
+        "exact_training_joke": false,
+        "longest_training_match": {
+          "length": 4,
+          "training_document_index": 162,
+          "training_token_offset": 4,
+          "generated_token_offset": 1,
+          "tokens": [
+            "a",
+            "squid",
+            "laugh",
+            "?"
+          ]
+        },
+        "fourgrams": 7,
+        "training_fourgram_hits": 1,
+        "training_fourgram_fraction": 0.14285714285714285,
+        "trigrams": 8,
+        "repeated_trigrams": 0,
+        "repeated_trigram_fraction": 0.0
+      }
+    ]
+  }
+}

@@ -9,8 +9,8 @@ from local_code.stage_4_code.generation.evaluation import evaluate_runs
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--data', required=True, type=Path, help='Course generation text file or directory')
-    parser.add_argument('--test-data', type=Path, help='Supply only when the original experiment used a separate test file')
+    parser.add_argument('--data', required=True, type=Path, help='Course ID,Joke CSV (the supplied extensionless data file)')
+    parser.add_argument('--test-data', type=Path, help='Separate ID,Joke test CSV, if used in training')
     parser.add_argument('--results-dir', type=Path, default=Path('results/generation'))
     args = parser.parse_args()
     recorded = json.loads((args.results_dir / 'dataset.json').read_text())

@@ -1,0 +1,254 @@
+[
+  {
+    "prompt": "what did the",
+    "prompt_tokens": [
+      "what",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "number",
+      "zero",
+      "say",
+      "his",
+      "other",
+      "frog",
+      ",",
+      "and",
+      "smells",
+      "?",
+      "he",
+      "could",
+      "the",
+      "other",
+      "day",
+      "to",
+      "get",
+      "when",
+      "the",
+      "bartender",
+      ",",
+      "\"",
+      "is",
+      "the",
+      "necronomnomnomicon",
+      ".",
+      "!"
+    ],
+    "text": "what did the number zero say his other frog, and smells? he could the other day to get when the bartender, \" is the necronomnomnomicon.!",
+    "seed": 170,
+    "stop": "eos"
+  },
+  {
+    "prompt": "what did the",
+    "prompt_tokens": [
+      "what",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "other",
+      "to",
+      "the",
+      "difference",
+      "between",
+      "a",
+      "man",
+      "go",
+      "to",
+      "see",
+      "?",
+      "because",
+      "he",
+      "was",
+      "at",
+      "a",
+      "-",
+      "-",
+      "shirt",
+      "."
+    ],
+    "text": "what did the other to the difference between a man go to see? because he was at a - - shirt.",
+    "seed": 171,
+    "stop": "eos"
+  },
+  {
+    "prompt": "what did the",
+    "prompt_tokens": [
+      "what",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "fish",
+      "say",
+      "when",
+      "when",
+      "he",
+      "got",
+      "his",
+      "?",
+      "because",
+      "he",
+      "was",
+      "a",
+      "dog",
+      "."
+    ],
+    "text": "what did the fish say when when he got his? because he was a dog.",
+    "seed": 172,
+    "stop": "eos"
+  },
+  {
+    "prompt": "why did the",
+    "prompt_tokens": [
+      "why",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "melon",
+      "fall",
+      "in",
+      "his",
+      "chicken",
+      "?",
+      "it",
+      "."
+    ],
+    "text": "why did the melon fall in his chicken? it.",
+    "seed": 170,
+    "stop": "eos"
+  },
+  {
+    "prompt": "why did the",
+    "prompt_tokens": [
+      "why",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "chicken",
+      "cross",
+      "the",
+      "other",
+      "and",
+      "a",
+      "pie",
+      "?",
+      "because",
+      "it",
+      "was",
+      "a",
+      "little",
+      "-",
+      "minded",
+      "!",
+      "!",
+      "!"
+    ],
+    "text": "why did the chicken cross the other and a pie? because it was a little - minded!!!",
+    "seed": 171,
+    "stop": "eos"
+  },
+  {
+    "prompt": "why did the",
+    "prompt_tokens": [
+      "why",
+      "did",
+      "the"
+    ],
+    "generated_tokens": [
+      "fish",
+      "say",
+      "to",
+      "the",
+      "other",
+      "wall",
+      "?",
+      "he",
+      "was",
+      "a",
+      "cow",
+      "with",
+      "a",
+      "piano"
+    ],
+    "text": "why did the fish say to the other wall? he was a cow with a piano",
+    "seed": 172,
+    "stop": "eos"
+  },
+  {
+    "prompt": "how do you",
+    "prompt_tokens": [
+      "how",
+      "do",
+      "you"
+    ],
+    "generated_tokens": [
+      "call",
+      "an",
+      "octopus",
+      "of",
+      "a",
+      "pair",
+      "of",
+      "a",
+      "lightbulb",
+      "?",
+      "a",
+      "cow",
+      "of",
+      "a",
+      "-",
+      "eye",
+      "."
+    ],
+    "text": "how do you call an octopus of a pair of a lightbulb? a cow of a - eye.",
+    "seed": 170,
+    "stop": "eos"
+  },
+  {
+    "prompt": "how do you",
+    "prompt_tokens": [
+      "how",
+      "do",
+      "you"
+    ],
+    "generated_tokens": [
+      "get",
+      "to",
+      "the",
+      "chicken",
+      "cross",
+      "the",
+      "road",
+      "?",
+      "a",
+      "duck"
+    ],
+    "text": "how do you get to the chicken cross the road? a duck",
+    "seed": 171,
+    "stop": "eos"
+  },
+  {
+    "prompt": "how do you",
+    "prompt_tokens": [
+      "how",
+      "do",
+      "you"
+    ],
+    "generated_tokens": [
+      "make",
+      "a",
+      "tissue",
+      "deer",
+      "?",
+      "a",
+      "little"
+    ],
+    "text": "how do you make a tissue deer? a little",
+    "seed": 172,
+    "stop": "eos"
+  }
+]

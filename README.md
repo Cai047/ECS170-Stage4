@@ -1,14 +1,36 @@
-# ECS 170 Stage 4 · Text generation
+# ECS 170 Stage 4 · Text classification and generation
 
-Person 4's contribution compares a vanilla RNN, LSTM and GRU on the instructor's text generation corpus. The companion text classification task can be added alongside generation in the same course template.
+We compare vanilla RNN, LSTM and GRU models on two tasks from the instructor's Stage 4 dataset: IMDb sentiment classification and short joke generation. The joint [Stage 4 report](report/Stage4_Report.pdf) covers both tasks.
 
 | Directory | Contents |
 | --- | --- |
 | `local_code/base_class/` | Instructor-provided base classes |
+| `local_code/stage_4_code/*.py` | IMDb loading, classification models, training and evaluation |
 | `local_code/stage_4_code/generation/` | Corpus preparation, recurrent language models, training and evaluation |
-| `script/stage_4_script/` | Generation experiment entry points |
+| `script/stage_4_script/` | Classification and generation entry points |
+| `results/classification/` | Reported classification metrics and figures |
+| `result/stage_4_result/` | Default destination for new classification runs |
 | `results/generation/`, `results/generation_wide/` | Results and weights for the 20-epoch comparison and 45-epoch manual demo |
-| `report/` | Editable generation section for the joint Stage 4 report |
+| `report/` | Joint report and earlier generation-only Word draft |
+
+## Train and test the IMDb classifiers
+
+Download the [instructor's Stage 4 dataset](https://drive.google.com/file/d/1yNr8deq1JO-HNhlAa1yV4Zycjqmr1Hfz/view). From the repository root, install the shared dependencies and pass the path to the downloaded ZIP. You can also pass the extracted `text_classification` directory.
+
+```sh
+python -m pip install -r requirements.txt
+python script/stage_4_script/script_text_classification.py --data "PATH/TO/stage_4_data.zip"
+```
+
+The script trains RNN, LSTM and GRU with 128 hidden units and a second GRU with 64. Seed 42 fixes the stratified split of the official training set into 20,000 fitting reviews and 5,000 validation reviews. Each model learns its embeddings. Minimum validation loss selects the checkpoint for evaluation on the 25,000 official test reviews.
+
+Each run writes weights, vocabulary, epoch histories, test predictions and summary metrics to `result/stage_4_result/`. Pass `--output PATH/TO/NEW_RESULTS` to keep runs separate. The original public source includes the training program and reported scores. The original per-review predictions, training histories and classifier weights were not published. After training, the script can classify a new review using the saved vocabulary and checkpoint:
+
+```sh
+python script/stage_4_script/script_text_classification.py --checkpoint result/stage_4_result/GRU_h128.pt --text "I enjoyed this movie."
+```
+
+The validation-selected GRU with 128 hidden units achieved 85.652% test accuracy in the contributor's run. For the reported environment, use a separate virtual environment with `requirements-classification.txt`. The contributor used PyTorch 2.11.0 with CUDA 12.8 on an RTX 4060 Laptop GPU. The shared entry point also supports CPU with `--device cpu`. See [the classification contributor's original implementation and experiment notes](https://github.com/BoAlanL/ECS170-Stage4-Text-Classification/tree/4914e15b10cc708e03e57aa25282354f8ad9a3e5). The shared repository retains the contributor's original commits and the instructor's base-class attribution.
 
 ## Try a three-word opening
 
@@ -52,7 +74,7 @@ All runs use the course jokes and word embeddings trained with the language mode
 | LSTM | 215,069 | 41.30 | 32.16% |
 | GRU | 207,773 | 44.43 | 31.58% |
 
-[Learning curves](results/generation/learning_curves.png) show the training and validation losses. [Evaluation details](results/generation/evaluation.json) pair generated examples with training references; [per-prompt comparisons](results/generation/summary_by_prompt.csv) pool the three sampling seeds for each cell and prompt. Each model folder contains its unedited samples, epoch logs, experiment settings and checkpoint. For the shared project, the classification contributor can add a sibling `local_code/stage_4_code/classification/` and their own scripts and results.
+[Learning curves](results/generation/learning_curves.png) show the training and validation losses. [Evaluation details](results/generation/evaluation.json) pair generated examples with training references; [per-prompt comparisons](results/generation/summary_by_prompt.csv) pool the three sampling seeds for each cell and prompt. Each model folder contains its unedited samples, epoch logs, experiment settings and checkpoint.
 
 ## Readability and training overlap
 

@@ -7,3 +7,5 @@ __pycache__/
 !results/generation/*/checkpoint.pt
 !results/generation_wide/*/checkpoint.pt
 /results_new/
+/result/stage_4_result/*
+!/result/stage_4_result/.gitkeep
